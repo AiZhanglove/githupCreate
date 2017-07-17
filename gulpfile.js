@@ -16,6 +16,7 @@ gulp.task('minjs',function(){
     return gulp.src('client/js/**/*.js')
         .pipe(minify({
             ext:{
+                src:'.js',
                 min:'.js'
             },
             exclude: ['tasks'],
