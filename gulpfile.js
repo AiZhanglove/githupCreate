@@ -14,7 +14,13 @@ gulp.task('default',function(){
 
 gulp.task('minjs',function(){
     return gulp.src('client/js/**/*.js')
-        .pipe(minify())
+        .pipe(minify({
+            ext:{
+                min:'.js'
+            },
+            exclude: ['tasks'],
+            ignoreFiles: ['.combo.js', '-min.js']
+        }))
         .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest('build/js'))
         .pipe(notify({message:'js is ok'}))
