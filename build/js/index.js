@@ -1,0 +1,1 @@
+function test(){alert("this is a test!!!!");for(var t=0;t<100;t++)t%3==0&&console.log(t)}
