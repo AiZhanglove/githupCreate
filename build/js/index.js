@@ -1,12 +1,1 @@
-/**
- * Created by ZhangAi on 2017/7/17.
- */
-function test(){
-    alert('this is a test!!!!')
-    for(var i=0;i<100;i++){
-        if(i%3==0){
-            console.log(i);
-        }
-    }
-
-}
+function test(){for(var o=0;o<100;o++)o%3==0&&console.log(o)}test();

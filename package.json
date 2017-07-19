@@ -4,14 +4,16 @@
   "description": "this is a test project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AiZhanglove/githupCreate.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "zhangai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AiZhanglove/githupCreate/issues"
@@ -19,11 +21,15 @@
   "homepage": "https://github.com/AiZhanglove/githupCreate#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-minify": "^1.0.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "pump": "^1.0.2"
   }
 }
